@@ -1,8 +1,15 @@
+using CrystalDecisions.CrystalReports.Engine;
+using System;
+public partial class PlacementReport : System.Web.UI.Page
 {
-  "solution": {
-    "path": "..\\source\\repos\\practical 9\\practical 9.slnx",
-    "projects": [
-      "practical 9\\practical 9.csproj"
-    ]
-  }
+    protected void btnGenerate_Click(
+    object sender, EventArgs e)
+    {
+        ReportDocument report =
+        new ReportDocument();
+        report.Load(Server.MapPath(
+        "~/Reports/PlacementReport.rpt"));
+        CrystalReportViewer1.ReportSource = report;
+        CrystalReportViewer1.DataBind();
+    }
 }
