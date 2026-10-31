@@ -1,8 +1,55 @@
-{
-  "solution": {
-    "path": "..\\source\\repos\\practical 9\\practical 9.slnx",
-    "projects": [
-      "practical 9\\practical 9.csproj"
-    ]
-  }
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f8fc;
 }
+
+.sidebar {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    background: #102a43;
+    color: white;
+    padding: 20px;
+}
+
+    .sidebar a {
+        display: block;
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+    }
+.main {
+    margin-left: 260px;
+    padding: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+    .cards div {
+        padding: 30px;
+        background: #1683e6;
+        color: white;
+        width: 180px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .cards b {
+        font-size: 30px;
+    }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+    .table th,
+    .table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+    }
